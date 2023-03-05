@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Personal Porfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fontawesome.com/icons">
+        <script src="https://kit.fontawesome.com/e26135f3f3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+                <nav class="navbar">
+                    <img src="https://res.cloudinary.com/dfkpby1rg/image/upload/v1677647715/logo_um3ba5.jpg" class="img1"/>
+                    <ul>  
+                        <li class="all"><a href="#home">Home</a></li>
+                        <li class="all"><a href="#about">About</a></li>
+                        <li class="all"><a href="#projectspage">Projects page</a></li>
+                        <li class="all"><a href="#contacts">Contact page</a></li>
+                    </ul>
+                </nav>
+                <section id="home">
+                    <div class="main">
+                        <h1 class="heading">I AM <br>MD.AFSANA PARVEEN</h1>
+                        <button class="btn">Know More</button>
+                    </div>
+                </section>
+                <section id="about">
+                    <h1 class="heading">ABOUT ME</h1>
+                    <div id="pic">
+                        
+                        <img src="personal1.jpg" style="width: 575px; height: 400px;"/>
+                        <div id="intro">
+                            <h3>MD.AFSANA PARVEEN</h3>
+                            <p class="int">Hello,
+
+                                My name is mohammed afsana parveen, I am basically from vizag and currently staying in vizag. and I am doing my graduation from Andhra University.As Computer Science Engineering(CSE) 3rd year student and have always been interested in technology and programming. During my time in the university, I gained practical experience through internships at companies such as Atelia. These experiences helped me develop problem-solving, communication, and teamwork skills.
+                                coming to my junior college education i have completed my 11th and 12th from sri chaitanya junior college with 91% passed out in the year 2020.I  have done my schooling from bhashyam high school which is located at gajuwaka(vizag) with 95% passed out in the year 2018.My Hobbies are
+                                
+                                In my free time, I enjoy staying up to date with the latest technological advancements and also love to play video games and also love to play with my friends. I am a detail-oriented and dedicated individual, and I am hard working girl.
+
+                                and I'm very much dedicated to my work. coming to my family i belongs to nuclear family where we were four members my mom is a house wife my father is an employee and my brother who recently got placed in a software company.and this is in short about me.
+                                <br>
+                               <p> THANK YOU </p>
+                             </p>   
+                               
+                        </div>
+                    </div>
+                </section>
+                <section id="projectspage">
+                    <h1 class="heading">Projects Done In fsd Bootcamp</h1>
+                    <div class="gallery">
+                       
+                        <img src="img1.jpg">
+                        <img src="img2.jpg">
+                        <img src="img3.jpg">
+                        <h1>The Show Are some of the projects/assignments done by me in fsd bootcamp</h1>
+                    </div>
+                </section>
+                <div id="contacts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="content-left">
+                                <h1 class="heading">
+                                    CONTACT ME
+                                 </h1>
+                                 <p><i class="fa-regular fa-paper-plane" style="color: aliceblue; font-size: 15px;">afsanaparveen2828@gmail.com</i></p>
+                                 <p class="mail"><i class="fa-solid fa-phone"  style="color: aliceblue; font-size: 15px;">9490971107</i></p>
+                                 <div class="social-icons">
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    
+                                 </div>
+                                
+                            </div>
+                            <div class="content-right">
+                                <form name="submit-to-google-sheet" class="form">
+                                    <input type="text" name="name" class="input" placeholder="enter your name here" required>
+                                    <input type="text" name="email" class="input" placeholder="enter your email here">
+                                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="enter your message"></textarea>
+                                    <button type="submit" id="send" placeholder="submit">Submit</button>
+                                </form>
+                                <p>All you can do is please send your feedback by typing message in contact form</p>
+                                <div class="copyright">
+                                    <p>Copyright @ Afsana parveen</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5zAmetCpeMvu5IjZvi9uNhaFCHhZ_hz68KcXQ7-UfC0fK_B0ld7dXjYANsQSxRA7dIA/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                    </script>
+
+        
+
+    </body>
+</html>
